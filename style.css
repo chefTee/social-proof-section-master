@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: 0% 0%, 40% 100% ;
+    background-repeat: no-repeat;
+    background-size: 500px 250px,  50% auto;
+    overflow: hidden;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+.review-section{
+    margin-top: 5rem;
+    display: flex;
+    margin-bottom: 5rem;
+    justify-content: space-around;
+} 
+.review-summary-section{
+    width: 30%;
+} 
+.review-summary-heading{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 2.2rem;
+    color: hsl(300, 43%, 22%);
+    margin-bottom: 1.2rem;
+    
+}
+.review-summary{
+    color: hsl(303, 10%, 40%);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+.review-ratings-section{
+    width: 30%;
+}
+.review-ratings {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: hsl(300, 24%, 96%);
+    padding: 15px 1.5rem;
+    border-radius: 10px;
+}
+.review-ratings:last-child{
+    margin-bottom: none;
+}
+.review-ratings.one{
+    position: relative;
+    right: 100px;
+}
+.review-ratings.two{
+    position: relative;
+    right: 50px;
+}
+.review-rating-stars {
+    margin-right: 12px; 
+}
+.review-rating-summary{
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+.review-rating p{
+    color: hsl(300, 43%, 22%);
+}
+
+.individual-reviews-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.individual-review{
+    width: 26%;
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    margin-left: 1rem;
+    padding: 2.5rem 1.5rem;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 10px;
+}
+.individual-review.one{
+    position: relative;
+    bottom: 30px;
+
+}
+.individual-review.two{
+    position: relative;
+    bottom: 15px;
+}
+.individual-review-profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+.proile-details .name{
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+.proile-details .role{
+    color:hsl(333, 80%, 67%) ;
+}
+.profile-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    margin-right: 1.2rem;
+}
+.individual-review-summary p{
+    line-height: 1.1rem;
+}
+
+@media (max-width:1194px){
+    .review-section{
+        display: flex;
+        align-items: center;
+    } 
+    .review-ratings-section{
+        padding: 15px 10px;
+    } 
+    .review-ratings{
+        display: flex;
+        flex-direction: column
+    }
+    .review-rating-stars {
+        margin-bottom: 1rem;
+    }
+    .review-rating-summary{
+        font-size: 15px;
+        font-weight: 800;
+        color: hsl(300, 43%, 22%);
+    }
+}
+
+@media (max-width:965px) {
+    .review-section{
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    } 
+    .review-summary-section{
+        width: 80%;
+        text-align: center;
+    }
+    .review-summary{
+        color: hsl(303, 10%, 40%);
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .review-ratings-section{
+        width: 80%;
+    }
+    .review-ratings {
+        display: flex;
+        position: relative;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+        background-color: hsl(300, 24%, 96%);
+        padding: 15px 1.5rem;
+        border-radius: 10px;
+    }
+    .individual-reviews-section{
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .individual-review{
+        width: 80%;
+        position: relative;
+        bottom: 0;
+    }
+}
+
