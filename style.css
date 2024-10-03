@@ -105,7 +105,10 @@ body{
 .individual-review-profile{
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
+
 }
+
 .proile-details .name{
     font-weight: 500;
     margin-bottom: 3px;
